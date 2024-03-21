@@ -103,7 +103,7 @@ const Home = () => {
             if (JSON.stringify(apiResponse.data.photos.photo) !== JSON.stringify(prevImageURL)) {
                 handleAsyncStorage(JSON.stringify(apiResponse));
                 setImageURL(addUrls(apiResponse.data.photos.photo));
-                prevImageURL(addUrls(apiResponse.data.photos.photo));
+                setPrevImageURL(addUrls(apiResponse.data.photos.photo));
             }
 
             // console.log(imageURL);
