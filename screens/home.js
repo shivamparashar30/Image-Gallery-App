@@ -15,7 +15,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import photos from '../components/photos.js';
 import { isConnected } from '../Connection.js';
 
-const home = () => {
+const Home = () => {
 
 
     const route = useRoute();
@@ -152,7 +152,7 @@ const home = () => {
     )
 }
 
-export default home
+export default Home
 
 const styles = StyleSheet.create({
     container: {
